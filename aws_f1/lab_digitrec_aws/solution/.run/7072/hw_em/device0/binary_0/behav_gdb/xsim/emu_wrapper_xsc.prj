@@ -1,0 +1,9 @@
+# compile SystemC design source files
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_axi_perf_mon_0_0/sim/emu_sim_axi_perf_mon_0_0.cxx"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_axi_perf_mon_1_0/sim/emu_sim_axi_perf_mon_1_0.cxx"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_axi_perf_mon_2_0/sim/emu_sim_axi_perf_mon_2_0.cxx"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_axi_perf_mon_3_0/sim/emu_sim_axi_perf_mon_3_0.cxx"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_axi_perf_mon2_0_0/sim/emu_sim_axi_perf_mon2_0_0.cxx"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_accel_mon_0_0/sysc/xaxi_accel_profiler.cpp"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_accel_mon_0_0/sysc/xaxi_accel_profiler_instmgr.cpp"
+"../../../../prj.ip_user_files/bd/emu/ip/emu_sim_accel_mon_0_0/sim/emu_sim_accel_mon_0_0.cxx"

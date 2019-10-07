@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <wvobject type="group" fp_name="device_group">
+      <obj_property name="label">Device &quot;xilinx_aws-vu9p-f1-04261818_dynamic_5_0-0&quot;</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="group" fp_name="bin_group">
+         <obj_property name="label">Binary Container &quot;DigitRec.hw_emu&quot;</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="group" fp_name="mem_intf_group">
+            <obj_property name="label">Memory Data Transfers</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="group" fp_name="mem_group">
+               <obj_property name="label">DDR Bank 0</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Read Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/readAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/readAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 0</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_ARADDR">
+                     <obj_property name="label">ARADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_ARLEN">
+                     <obj_property name="label">ARLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_ARVALID">
+                     <obj_property name="label">ARVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_ARREADY">
+                     <obj_property name="label">ARREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Read Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/readDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/readDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 0</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_RDATA">
+                     <obj_property name="label">RDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_RVALID">
+                     <obj_property name="label">RVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_RREADY">
+                     <obj_property name="label">RREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_RLAST">
+                     <obj_property name="label">RLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Write Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/writeAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/writeAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 0</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_AWADDR">
+                     <obj_property name="label">AWADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_AWLEN">
+                     <obj_property name="label">AWLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_AWVALID">
+                     <obj_property name="label">AWVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_AWREADY">
+                     <obj_property name="label">AWREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Write Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/writeDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem0/inst/writeDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 0</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_WDATA">
+                     <obj_property name="label">WDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_WVALID">
+                     <obj_property name="label">WVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_WREADY">
+                     <obj_property name="label">WREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem0_M00_AXI_WLAST">
+                     <obj_property name="label">WLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="mem_group">
+               <obj_property name="label">DDR Bank 1</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Read Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/readAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/readAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 1</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_ARADDR">
+                     <obj_property name="label">ARADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_ARLEN">
+                     <obj_property name="label">ARLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_ARVALID">
+                     <obj_property name="label">ARVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_ARREADY">
+                     <obj_property name="label">ARREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Read Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/readDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/readDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 1</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_RDATA">
+                     <obj_property name="label">RDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_RVALID">
+                     <obj_property name="label">RVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_RREADY">
+                     <obj_property name="label">RREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_RLAST">
+                     <obj_property name="label">RLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Write Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/writeAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/writeAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 1</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_AWADDR">
+                     <obj_property name="label">AWADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_AWLEN">
+                     <obj_property name="label">AWLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_AWVALID">
+                     <obj_property name="label">AWVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_AWREADY">
+                     <obj_property name="label">AWREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Write Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/writeDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem1/inst/writeDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 1</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_WDATA">
+                     <obj_property name="label">WDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_WVALID">
+                     <obj_property name="label">WVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_WREADY">
+                     <obj_property name="label">WREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem1_M00_AXI_WLAST">
+                     <obj_property name="label">WLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="mem_group">
+               <obj_property name="label">DDR Bank 2</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Read Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/readAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/readAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 2</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_ARADDR">
+                     <obj_property name="label">ARADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_ARLEN">
+                     <obj_property name="label">ARLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_ARVALID">
+                     <obj_property name="label">ARVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_ARREADY">
+                     <obj_property name="label">ARREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Read Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/readDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/readDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 2</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_RDATA">
+                     <obj_property name="label">RDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_RVALID">
+                     <obj_property name="label">RVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_RREADY">
+                     <obj_property name="label">RREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_RLAST">
+                     <obj_property name="label">RLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Write Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/writeAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/writeAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 2</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_AWADDR">
+                     <obj_property name="label">AWADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_AWLEN">
+                     <obj_property name="label">AWLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_AWVALID">
+                     <obj_property name="label">AWVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_AWREADY">
+                     <obj_property name="label">AWREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Write Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/writeDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem2/inst/writeDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 2</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_WDATA">
+                     <obj_property name="label">WDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_WVALID">
+                     <obj_property name="label">WVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_WREADY">
+                     <obj_property name="label">WREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem2_M00_AXI_WLAST">
+                     <obj_property name="label">WLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="mem_group">
+               <obj_property name="label">DDR Bank 3</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Read Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/readAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/readAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 3</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_ARADDR">
+                     <obj_property name="label">ARADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_ARLEN">
+                     <obj_property name="label">ARLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_ARVALID">
+                     <obj_property name="label">ARVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_ARREADY">
+                     <obj_property name="label">ARREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Read Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/readDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/readDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Read Transactions on DDR bank 3</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_RDATA">
+                     <obj_property name="label">RDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_RVALID">
+                     <obj_property name="label">RVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_RREADY">
+                     <obj_property name="label">RREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_RLAST">
+                     <obj_property name="label">RLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="addr_group">
+                  <obj_property name="label">Write Address</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/writeAddrWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/writeAddrTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 3</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_AWADDR">
+                     <obj_property name="label">AWADDR</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_AWLEN">
+                     <obj_property name="label">AWLEN</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_AWVALID">
+                     <obj_property name="label">AWVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_AWREADY">
+                     <obj_property name="label">AWREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="data_group">
+                  <obj_property name="label">Write Data</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                  <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/writeDataWaveData</obj_property>
+                  <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_ddrmem3/inst/writeDataTooltipData</obj_property>
+                  <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                  <obj_property name="Description_Data">Write Transactions on DDR bank 3</obj_property>
+                  <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_WDATA">
+                     <obj_property name="label">WDATA</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_WVALID">
+                     <obj_property name="label">WVALID</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_WREADY">
+                     <obj_property name="label">WREADY</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/interconnect_aximm_ddrmem3_M00_AXI_WLAST">
+                     <obj_property name="label">WLAST</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="kernel_group">
+            <obj_property name="label">Kernel &quot;DigitRec&quot; 1:1:1</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="group" fp_name="cu_group">
+               <obj_property name="label">Compute Unit: DigitRec_1</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+               <obj_property name="Description_Data">Activity for compute unit DigitRec_1</obj_property>
+               <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+               <obj_property name="EnumTransactionValueTable">1=blank;0=Running</obj_property>
+               <obj_property name="CustomSignalColor">#4DB34D</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Render_Data">/emu_wrapper/emu_i/DigitRec_1/inst/ap_idle</obj_property>
+               <wvobject type="vbus" fp_name="stall_vbus">
+                  <obj_property name="label">CU Stalls (%)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="Description_Data">CU Functions that are stalling (%)</obj_property>
+                  <obj_property name="Radix">BITCOUNTRADIX</obj_property>
+                  <obj_property name="SHOWPERCENTCOUNT">true</obj_property>
+                  <obj_property name="ShowWaveText">true</obj_property>
+                  <obj_property name="EnumTransactionColorTable">f=blank</obj_property>
+                  <obj_property name="EnumTransactionValueTable">f=blank</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/ap_ext_blocking_n">
+                     <obj_property name="label">grp_default_function_fu_334: External Memory</obj_property>
+                     <obj_property name="Description_Data">Stalls from accessing external memory</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                     <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                     <obj_property name="ShowWaveText">false</obj_property>
+                     <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/ap_str_blocking_n">
+                     <obj_property name="label">grp_default_function_fu_334: Inter-Kernel Pipe</obj_property>
+                     <obj_property name="Description_Data">Stalls from accessing pipes between compute units</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                     <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                     <obj_property name="ShowWaveText">false</obj_property>
+                     <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/ap_ext_blocking_n">
+                     <obj_property name="label">grp_knn_vote_fu_341: External Memory</obj_property>
+                     <obj_property name="Description_Data">Stalls from accessing external memory</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                     <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                     <obj_property name="ShowWaveText">false</obj_property>
+                     <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                  </wvobject>
+                  <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/ap_str_blocking_n">
+                     <obj_property name="label">grp_knn_vote_fu_341: Inter-Kernel Pipe</obj_property>
+                     <obj_property name="Description_Data">Stalls from accessing pipes between compute units</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                     <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                     <obj_property name="ShowWaveText">false</obj_property>
+                     <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="trans_group">
+                  <obj_property name="label">Data Transfers</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="isExpanded"></obj_property>
+                  <wvobject type="group" fp_name="mem_group">
+                     <obj_property name="label">m_axi_gmem</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="isExpanded"></obj_property>
+                     <wvobject type="group" fp_name="addr_group">
+                        <obj_property name="label">Read Address</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                        <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/readAddrWaveData</obj_property>
+                        <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/readAddrTooltipData</obj_property>
+                        <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                        <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_ARADDR">
+                           <obj_property name="label">ARADDR</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_ARLEN">
+                           <obj_property name="label">ARLEN</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_ARVALID">
+                           <obj_property name="label">ARVALID</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_ARREADY">
+                           <obj_property name="label">ARREADY</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                     </wvobject>
+                     <wvobject type="group" fp_name="data_group">
+                        <obj_property name="label">Read Data</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <obj_property name="CustomSignalColor">#4747BB</obj_property>
+                        <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/readDataWaveData</obj_property>
+                        <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/readDataTooltipData</obj_property>
+                        <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                        <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_RDATA">
+                           <obj_property name="label">RDATA</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_RVALID">
+                           <obj_property name="label">RVALID</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_RREADY">
+                           <obj_property name="label">RREADY</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_RLAST">
+                           <obj_property name="label">RLAST</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                     </wvobject>
+                     <wvobject type="group" fp_name="addr_group">
+                        <obj_property name="label">Write Address</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                        <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/writeAddrWaveData</obj_property>
+                        <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/writeAddrTooltipData</obj_property>
+                        <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                        <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_AWADDR">
+                           <obj_property name="label">AWADDR</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_AWLEN">
+                           <obj_property name="label">AWLEN</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_AWVALID">
+                           <obj_property name="label">AWVALID</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_AWREADY">
+                           <obj_property name="label">AWREADY</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                     </wvobject>
+                     <wvobject type="group" fp_name="data_group">
+                        <obj_property name="label">Write Data</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <obj_property name="CustomSignalColor">#B64E4E</obj_property>
+                        <obj_property name="Render_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/writeDataWaveData</obj_property>
+                        <obj_property name="Detail_Data">/emu_wrapper/emu_i/xilmonitor_DigitRec_1_m_axi_gmem/inst/writeDataTooltipData</obj_property>
+                        <obj_property name="EnumTransactionColorTable">ffffffffffffffff=blank 3ffffffff=blank fffffffff=blank</obj_property>
+                        <obj_property name="EnumTransactionValueTable">ffffffffffffffff=blank;3ffffffff=blank;fffffffff=blank</obj_property>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_WDATA">
+                           <obj_property name="label">WDATA</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_WVALID">
+                           <obj_property name="label">WVALID</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_WREADY">
+                           <obj_property name="label">WREADY</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/m_axi_gmem_WLAST">
+                           <obj_property name="label">WLAST</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="functions">
+                  <obj_property name="label">User Functions</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="isExpanded"></obj_property>
+                  <wvobject type="group" fp_name="func_group">
+                     <obj_property name="label">Function: grp_default_function_fu_334</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="isExpanded"></obj_property>
+                     <obj_property name="Description_Data">Activity for function grp_default_function_fu_334</obj_property>
+                     <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                     <obj_property name="EnumTransactionValueTable">1=blank;0=Running</obj_property>
+                     <obj_property name="CustomSignalColor">#4DB34D</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="Render_Data">/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/ap_idle</obj_property>
+                     <if_functional fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/grp_default_function_fu_334">
+                        <wvobject type="protoinst" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/grp_default_function_fu_334">
+                           <obj_property name="ElementShortName">Dataflow/Pipeline Activity</obj_property>
+                           <obj_property name="ObjectShortName">Dataflow/Pipeline Activity</obj_property>
+                           <obj_property name="label">Dataflow/Pipeline Activity</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                           <obj_property name="Description_Data">Dataflow/pipeline activity for function grp_default_function_fu_334</obj_property>
+                        </wvobject>
+                     </if_functional>
+                     <wvobject type="vbus" fp_name="stall_vbus">
+                        <obj_property name="label">Function Stalls</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="EnumTransactionColorTable">3=blank</obj_property>
+                        <obj_property name="EnumTransactionValueTable">3=blank;0=stall;1=stall;2=stall</obj_property>
+                        <obj_property name="ShowWaveText">false</obj_property>
+                        <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/ap_ext_blocking_n">
+                           <obj_property name="label">External Memory</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                           <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                           <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                           <obj_property name="Description_Data">Stalls from accessing external memory</obj_property>
+                           <obj_property name="ShowWaveText">false</obj_property>
+                           <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                           <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                           <obj_property name="UseCustomSignalColor">true</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/ap_str_blocking_n">
+                           <obj_property name="label">Inter-Kernel Pipe</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                           <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                           <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                           <obj_property name="Description_Data">Stalls from accessing pipes between compute units</obj_property>
+                           <obj_property name="ShowWaveText">false</obj_property>
+                           <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                           <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                           <obj_property name="UseCustomSignalColor">true</obj_property>
+                        </wvobject>
+                     </wvobject>
+                     <wvobject type="group" fp_name="io_group">
+                        <obj_property name="label">Function I/O</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/test_image_V">
+                           <obj_property name="label">test_image_V</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/train_images_V_q0">
+                           <obj_property name="label">train_images_V_q0</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/knn_mat_V_d0">
+                           <obj_property name="label">knn_mat_V_d0</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/knn_mat_V_q0">
+                           <obj_property name="label">knn_mat_V_q0</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_default_function_fu_334/knn_mat_V_q1">
+                           <obj_property name="label">knn_mat_V_q1</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="func_group">
+                     <obj_property name="label">Function: grp_knn_vote_fu_341</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="isExpanded"></obj_property>
+                     <obj_property name="Description_Data">Activity for function grp_knn_vote_fu_341</obj_property>
+                     <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                     <obj_property name="EnumTransactionValueTable">1=blank;0=Running</obj_property>
+                     <obj_property name="CustomSignalColor">#4DB34D</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="Render_Data">/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/ap_idle</obj_property>
+                     <if_functional fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/grp_knn_vote_fu_341">
+                        <wvobject type="protoinst" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/grp_knn_vote_fu_341">
+                           <obj_property name="ElementShortName">Dataflow/Pipeline Activity</obj_property>
+                           <obj_property name="ObjectShortName">Dataflow/Pipeline Activity</obj_property>
+                           <obj_property name="label">Dataflow/Pipeline Activity</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                           <obj_property name="Description_Data">Dataflow/pipeline activity for function grp_knn_vote_fu_341</obj_property>
+                        </wvobject>
+                     </if_functional>
+                     <wvobject type="vbus" fp_name="stall_vbus">
+                        <obj_property name="label">Function Stalls</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="EnumTransactionColorTable">3=blank</obj_property>
+                        <obj_property name="EnumTransactionValueTable">3=blank;0=stall;1=stall;2=stall</obj_property>
+                        <obj_property name="ShowWaveText">false</obj_property>
+                        <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/ap_ext_blocking_n">
+                           <obj_property name="label">External Memory</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                           <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                           <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                           <obj_property name="Description_Data">Stalls from accessing external memory</obj_property>
+                           <obj_property name="ShowWaveText">false</obj_property>
+                           <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                           <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                           <obj_property name="UseCustomSignalColor">true</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="logic" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/ap_str_blocking_n">
+                           <obj_property name="label">Inter-Kernel Pipe</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                           <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+                           <obj_property name="EnumTransactionValueTable">1=blank;0=stall</obj_property>
+                           <obj_property name="Description_Data">Stalls from accessing pipes between compute units</obj_property>
+                           <obj_property name="ShowWaveText">false</obj_property>
+                           <obj_property name="CustomSignalColor">#FF7F27</obj_property>
+                           <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                           <obj_property name="UseCustomSignalColor">true</obj_property>
+                        </wvobject>
+                     </wvobject>
+                     <wvobject type="group" fp_name="io_group">
+                        <obj_property name="label">Function I/O</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/knn_set_V_d0">
+                           <obj_property name="label">knn_set_V_d0</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/knn_set_V_q0">
+                           <obj_property name="label">knn_set_V_q0</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                        <wvobject db_ref_id="1" type="array" fp_name="/emu_wrapper/emu_i/DigitRec_1/inst/grp_knn_vote_fu_341/knn_set_V_q1">
+                           <obj_property name="label">knn_set_V_q1</obj_property>
+                           <obj_property name="DisplayName">label</obj_property>
+                        </wvobject>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

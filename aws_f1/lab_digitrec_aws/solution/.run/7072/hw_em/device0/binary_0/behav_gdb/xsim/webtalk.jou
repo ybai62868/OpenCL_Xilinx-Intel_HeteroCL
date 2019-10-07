@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct  4 21:25:29 2019
+# Process ID: 6691
+# Current directory: /home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.sim/sim_1/behav_gdb/xsim
+# Command line: wbtcv -mode batch -source /home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.sim/sim_1/behav_gdb/xsim/xsim.dir/emu_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.sim/sim_1/behav_gdb/xsim/webtalk.log
+# Journal file: /home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.sim/sim_1/behav_gdb/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.sim/sim_1/behav_gdb/xsim/xsim.dir/emu_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

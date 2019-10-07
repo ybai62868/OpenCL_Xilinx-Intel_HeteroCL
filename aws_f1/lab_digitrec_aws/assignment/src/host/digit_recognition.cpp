@@ -45,8 +45,7 @@ int main(int argc, char ** argv)
   struct timeval start, end;
 
   // create space for the result
-  // bit4_t* results = new bit4_t[NUM_TEST];
-  bit6_t results = new bit6_t[NUM_TEST];
+  bit4_t* results = new bit4_t[NUM_TEST];
 
   // create OpenCL world
   CLWorld digit_rec_world = CLWorld(TARGET_DEVICE, CL_DEVICE_TYPE_ACCELERATOR);
@@ -60,7 +59,7 @@ int main(int argc, char ** argv)
   // create mem objects
   CLMemObj training_mem ( (void*)training_data,  sizeof(digit),  NUM_TRAINING * 10 , CL_MEM_READ_ONLY);
   CLMemObj testing_mem  ( (void*)testing_data ,  sizeof(digit),  NUM_TEST          , CL_MEM_READ_ONLY);
-  CLMemObj result_mem   ( (void*)results      ,  sizeof(bit6_t), NUM_TEST          , CL_MEM_WRITE_ONLY);
+  CLMemObj result_mem   ( (void*)results      ,  sizeof(bit4_t), NUM_TEST          , CL_MEM_WRITE_ONLY);
 
   // start timer
   gettimeofday(&start, 0);
