@@ -1,8 +1,3 @@
-/*
-    Yang.Bai
-    yb269@cornell.edu
-*/
-
 #define CL_HPP_CL_1_2_DEFAULT_BUILD
 #define CL_HPP_TARGET_OPENCL_VERSION 120
 #define CL_HPP_MINIMUM_OPENCL_VERSION 120
@@ -21,11 +16,10 @@
 #include <iomanip>
 #include <math.h>
 
+#define LENGTH 10
 #define M 10
 #define N 10
-#define k 10
-
-
+#define K 10
 
 int main(int argc, char* argv[])
 {
@@ -43,39 +37,34 @@ int main(int argc, char* argv[])
     char* xclbinFilename = argv[1];
 
     // size_t vector_size_bytes = sizeof(int) * LENGTH * LENGTH;
-    size_t vector_size_bytes1 = sizeof(int) * M * K;
-    size_t vector_size_bytes2 = sizeof(int) * K * N;
-    size_t vector_size_bytes3 = sizeof(int) * M * N;
-
-
+    size_t vector_size_bytes1 = sizeof(int) * LENGTH*LENGTH;
+    size_t vector_size_bytes2 = sizeof(int) * LENGTH*LENGTH;
+    size_t vector_size_bytes3 = sizeof(int) * LENGTH*LENGTH;
 
     //Source Memories
-    std::vector<int> mat_a(M * K);
-    std::vector<int> mat_b(K * N);
-    std::vector<int> result_sim(M * N);
-    std::vector<int> result_krnl(M * N);
+    std::vector<unsigned int> source_a(LENGTH*LENGTH);
+    std::vector<unsigned int> source_b(LENGTH*LENGTH);
+    std::vector<unsigned int> result_sim (LENGTH*LENGTH);
+    std::vector<unsigned int> result_krnl (LENGTH*LENGTH);
 
-    for (int i = 0;i < M;i++) {
-        for (int j = 0;j < K;j++) {
-            mat_a[j + i * M] = i;
+
+    /* Create the test data and golden data locally */
+    for (int i=0; i < LENGTH; i++){
+        for (int j=0; j < LENGTH; j++){
+            source_a[j + i*LENGTH] = i;
+            source_b[j + i*LENGTH] = 2*i;
+            // result_sim[j + i*LENGTH] = source_a[j + i*LENGTH] + source_b[j + i*LENGTH];
         }
     }
-    for (int i = 0;i < K;i++) {
-        for (int j = 0;j < N;j++) {
-            mat_b[j + i * K] = i * 2;
-        }
-    }
-
-    for (int i = 0;i < M;i++) {
-        for (int j = 0;j < N;j++) {
+    for (int i = 0;i < LENGTH;i++) {
+        for (int j = 0;j < LENGTH;j++ ) {
             int temp = 0;
-            for ( int k = 0;k < K;k++) {
-                temp += mat_a[k + i * M] * mat_b[j + k*K];
+            for (int k = 0;k < LENGTH;k++) {
+                temp += source_a[k + i*LENGTH] * source_b[j + k*LENGTH];
             }
-            result_sim[j + i * M] = temp;
+            result_sim[j + i * LENGTH] = temp;
         }
     }
-
 
 // OPENCL HOST CODE AREA START
 
@@ -113,15 +102,13 @@ int main(int argc, char* argv[])
     //Creating Kernel and Functor of Kernel
     int err1;
     cl::Kernel kernel(program, "default_function", &err1);
-    // cl::Kernel kernel(program, "krnl_gemm", &err1);
-    // std::cout << err1 << std::endl;
     if (err1 != CL_SUCCESS)
     {
          std::cout << "Error: Failed to create compute kernel!" << std::endl;
          std::cout << "Test failed" << std::endl;
          return EXIT_FAILURE;
     }
-    auto default_function = cl::KernelFunctor<cl::Buffer&, cl::Buffer&, cl::Buffer&, cl::Buffer&>(kernel);
+    auto default_function = cl::KernelFunctor<cl::Buffer&, cl::Buffer&, cl::Buffer&>(kernel);
 
 
     //Creating Buffers inside Device
@@ -129,11 +116,9 @@ int main(int argc, char* argv[])
     cl::Buffer buffer_b(context, CL_MEM_READ_ONLY,  vector_size_bytes2);
     cl::Buffer buffer_c(context, CL_MEM_WRITE_ONLY, vector_size_bytes3);
 
-
     //Copying input data to Device buffer from host memory
-    q.enqueueWriteBuffer(buffer_a, CL_TRUE, 0, vector_size_bytes1, mat_a.data());
-    q.enqueueWriteBuffer(buffer_b, CL_TRUE, 0, vector_size_bytes2, mat_b.data());
-
+    q.enqueueWriteBuffer(buffer_a, CL_TRUE, 0, vector_size_bytes1, source_a.data());
+    q.enqueueWriteBuffer(buffer_b, CL_TRUE, 0, vector_size_bytes2, source_b.data());
 
     //Running Kernel
     default_function (cl::EnqueueArgs(q, cl::NDRange(1,1,1), cl::NDRange(1,1,1)),
@@ -143,23 +128,29 @@ int main(int argc, char* argv[])
 
     //Copying Device result data to Host memory
     q.enqueueReadBuffer(buffer_c, CL_TRUE, 0, vector_size_bytes3, result_krnl.data());
-    int krnl_match = 0;
-    for (int i = 0;i < M;i++) {
-        for (int j = 0;j < N;j++) {
-            if (result_sim[j + i * M] != result_krnl[j + i * M]) {
-                std::cout << "Error: Result mismatch" << std::endl;
-                std::cout << "i = " << i << " CPU result = " << result_sim[j + i * M] << " Krnl result = " << result_krnl[j + i * M] << std::endl;
-                krnl_match = 1;
-                break;
-            } else {
-                std::cout << "Result match: i = " << i << " CPU result = " << result_sim[j + i * M] << " Krnl result = " << result_krnl[j + i * M] << std::endl;
-            }
-        }
 
+    for (int i = 0;i < LENGTH;i++ ) {
+        for ( int j = 0;j < LENGTH;j++ ) {
+            std::cout << result_krnl[j + i * LENGTH] << " ";
+        }
+        std::cout << std::endl;
     }
 
+// OPENCL HOST CODE AREA END
 
-
-
-    return 0;
+    /* Compare the results of the kernel to the simulation */
+    int krnl_match = 0;
+    for (int i = 0;i < LENGTH; i++) {
+        for (int j = 0;j < LENGTH; j++) {
+            if (result_sim[j + i*LENGTH] != result_krnl[j + i * LENGTH]) {
+                std::cout << "Error: Result mismatch" << std::endl;
+                std::cout << "i = " << i << " CPU result = " << result_sim[j + i * LENGTH] << " Krnl Result = " << result_krnl[j + i * LENGTH] << std::endl;
+                krnl_match = 1;
+                break;  
+            }
+            else {
+                std::cout << "Result Match: i = " << i << " CPU result = " << result_sim[j + i * LENGTH] << " Krnl Result = " << result_krnl[j + i*LENGTH] << std::endl; 
+            }
+        }
+    }
 }
