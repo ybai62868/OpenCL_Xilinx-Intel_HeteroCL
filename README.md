@@ -5,6 +5,8 @@ This is a repo which contains something about how to use OpenCL backend (Xilinx/
 
 If you do not know HeteroCL, you can figure it out through this [link](https://github.com/cornell-zhang/heterocl). It is a open source project developed by [Computer Systems Lab, Zhang-Group](http://heterocl.csl.cornell.edu/web/)
 
+---
+
 ## Introduction
 
 - I add the OpenCL backend for HeteroCL ( Xilinx & Intel ), which can be found in this [branch](https://github.com/ybai62868/heterocl/tree/opencl).
@@ -14,16 +16,11 @@ If you do not know HeteroCL, you can figure it out through this [link](https://g
 ### Major features 
 
 - Loop Unrolling, Loop Piplining and Partition
-
 - Support of Arbitrary Precision Integers for Intel
-
 - Runtime system 
-
   - OpenCL C API for Intel (AOCL)
   - OpenCL C++ Wrapper API for Xilinx (SDAccel)
   - Rosetta for AWS 
-
-  
 
 ## Installation 
 
@@ -32,6 +29,12 @@ Please refer to [INSTALL.md](docs/INSTALL,md) for installation and environment p
 ## Get Started
 
 Please see [GETTING_STARTED.md](docs/GETTING_STARTED.md) for the basic usage of HeteroCL OpenCL backend.
+
+## Technical Report
+
+Please see  [TECHNICAL_DETAILS.md](docs/TECHNICAL_DETAILS.md) for learning how to add FPGA backend for HeteroCL.
+
+---
 
 ## Acknowledgement
 
