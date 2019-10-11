@@ -7,7 +7,7 @@
 - GCC ( G++ ) 4.8.5 or higher
 - [Miniconda Linux 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)
 
-We have tested the following versions of OS and softwares:
+We have tested the following version of OS and software:
 
 - OS:  CentOS Linux release 7.5.1804 (Core)
 - GCC ( G++ ): 4.8.5
@@ -68,8 +68,6 @@ lab_digitrec_aws
 │   │   ├── digitrec_aws.py
 │   ├── src
 │   │   ├── host 
-│   │   |		├── utils.cpp
-│   │   |		├── utils.h
 │   |		├── kernel
 │   ├── Makefile
 │   ├── run_hw.sh

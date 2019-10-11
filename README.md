@@ -30,7 +30,7 @@ If you do not know HeteroCL, you can figure it out through this [link](https://g
 
 ## Installation 
 
-Please refer to [INSTALL.md](docs/INSTALL,md) for installation and environment preparation.
+Please refer to [INSTALL.md](docs/INSTALL.md) for installation and environment preparation.
 
 ## Get Started
 
