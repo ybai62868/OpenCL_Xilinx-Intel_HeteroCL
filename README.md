@@ -17,9 +17,9 @@ If you do not know HeteroCL, you can figure it out through this [link](https://g
 
 ### Major features 
 
-- Loop Unrolling, Loop Piplining and Partition
-- Support of Arbitrary Precision Integers for Intel
-- Runtime system 
+- **Loop Unrolling, Loop Piplining and Partition**
+- **Support of Arbitrary Precision Integers for Intel**
+- **Runtime system**
   - OpenCL C API for Intel (AOCL)
   - OpenCL C++ Wrapper API for Xilinx (SDAccel)
   - Rosetta for AWS 
