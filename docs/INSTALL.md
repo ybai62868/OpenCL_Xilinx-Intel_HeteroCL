@@ -67,8 +67,8 @@ lab_digitrec_aws
 │   │   ├── digitrec_data.py
 │   │   ├── digitrec_aws.py
 │   ├── src
-│   │   ├── host 
-│   |		├── kernel
+│   │   ├── host
+│   │   ├── kernel
 │   ├── Makefile
 │   ├── run_hw.sh
 │   ├── run_sw.sh
