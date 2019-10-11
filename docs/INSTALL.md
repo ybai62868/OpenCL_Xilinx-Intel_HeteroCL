@@ -51,18 +51,18 @@ lab_digitrec_aws
 │   │   ├── digitrec_main.py
 │   │   ├── digitrec_data.py
 │   │   ├── digitrec_aws.py
-│   |		├── data
-│   │   |		├── testing_set.dat
-│   │   |		├── training_set_0.dat
-│   │   |		├── training_set_1.dat
-│   │   |		├── training_set_2.dat
-│   │   |		├── training_set_3.dat
-│   │   |		├── training_set_4.dat
-│   │   |		├── training_set_5.dat
-│   │   |		├── training_set_6.dat
-│   │   |		├── training_set_7.dat
-│   │   |		├── training_set_8.dat
-│   │   |		├── training_set_9.dat
+│   │   ├── data
+│   │   |   ├── testing_set.dat
+│   │   |   ├── training_set_0.dat
+│   │   |   ├── training_set_1.dat
+│   │   |   ├── training_set_2.dat
+│   │   |   ├── training_set_3.dat
+│   │   |   ├── training_set_4.dat
+│   │   |   ├── training_set_5.dat
+│   │   |   ├── training_set_6.dat
+│   │   |   ├── training_set_7.dat
+│   │   |   ├── training_set_8.dat
+│   │   |   ├── training_set_9.dat
 │   │   ├── digitrec_main.py
 │   │   ├── digitrec_data.py
 │   │   ├── digitrec_aws.py
