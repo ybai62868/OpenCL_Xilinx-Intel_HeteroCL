@@ -34,7 +34,7 @@ Please see [GETTING_STARTED.md](docs/GETTING_STARTED.md) for the basic usage of 
 
 ## Technical Report
 
-Please see  [TECHNICAL_DETAILS.md](docs/TECHNICAL_DETAILS.md) for learning how to add FPGA backend for HeteroCL.
+Please see  [TECHNICAL_DETAILS.md](docs/TECHNICAL_DETAILS.md) for learning how to add FPGA backend (Code Generation and Runtime) for HeteroCL.
 
 ---
 
