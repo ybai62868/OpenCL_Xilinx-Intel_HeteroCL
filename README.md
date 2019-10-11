@@ -1,5 +1,5 @@
 # OpenCL_Xilinx-Intel_HeteroCL
-This is a repo which contains something about how to use OpenCL backend (Xilinx/Intel) to test the samples in HeteroCL website.
+This is a repo which contains something about how to use OpenCL backend (Xilinx/Intel) to test the samples in HeteroCL.
 
 ## HeteroCL(FPGA'19 Best Paper Award!)
 
@@ -23,6 +23,10 @@ If you do not know HeteroCL, you can figure it out through this [link](https://g
   - OpenCL C API for Intel (AOCL)
   - OpenCL C++ Wrapper API for Xilinx (SDAccel)
   - Rosetta for AWS 
+
+## Updates
+
+
 
 ## Installation 
 
