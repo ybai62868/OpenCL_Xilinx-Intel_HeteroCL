@@ -63,9 +63,6 @@ lab_digitrec_aws
 │   │   |   ├── training_set_7.dat
 │   │   |   ├── training_set_8.dat
 │   │   |   ├── training_set_9.dat
-│   │   ├── digitrec_main.py
-│   │   ├── digitrec_data.py
-│   │   ├── digitrec_aws.py
 │   ├── src
 │   │   ├── host
 │   │   ├── kernel
