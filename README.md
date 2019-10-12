@@ -3,7 +3,7 @@ This is a repo which contains something about how to use OpenCL backend (Xilinx/
 
 ## HeteroCL(FPGA'19 Best Paper Award!)
 
-If you do not know HeteroCL, you can figure it out through this [link](https://github.com/cornell-zhang/heterocl). It is a open source project developed by [Computer Systems Lab, Zhang-Group](http://heterocl.csl.cornell.edu/web/)
+If you do not know HeteroCL, you can figure it out through this [link](https://github.com/cornell-zhang/heterocl). It is an open source project developed by [Computer Systems Lab, Zhang-Group](http://heterocl.csl.cornell.edu/web/)
 
 ![arch image](docs/arch.png)
 
