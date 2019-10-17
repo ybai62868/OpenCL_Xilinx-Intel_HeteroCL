@@ -238,6 +238,12 @@ print("Average kernel time (s): {:.2f}".format(total_time/180))
 print("Accuracy (%): {:.2f}".format(100*correct/180))
 ```
 
+Examples:
+
+```shell
+python digitrec/digitrec_aws.py
+```
+
 A jupyter notebook demo can be found in [demo]().
 
 ### Generate Kernel file
