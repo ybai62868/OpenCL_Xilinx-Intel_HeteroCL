@@ -16,7 +16,6 @@ For installation instructions, please see [INSTALL.md](INSTALL.md).
 You can use the following HeteroCL code to start the whole pipeline.Here is an example of building the KNN-Based Digit Recognition. You can name it as digitrec_main.py
 
 ```python
-# Import necessary modules.
 import heterocl as hcl
 import time
 import numpy as np
@@ -184,6 +183,8 @@ print("Accuracy (%): {:.2f}".format(100*correct/180))
 assert (correct >= 150.0)
 ```
 
+
+
 Examples:
 
 ```shell
@@ -301,17 +302,55 @@ extern "C"
 }
 ```
 
-Some arguments information:
+Arguments information:
 
 - `source_wrapper_0`: this argument represents the input argument (test_image label)
 - `source_wrapper_1`: this argument represents another input argument (training_image data)
 - `source_wrapper_2`: this argument represts the results (knn_mat)
 
-**Note**: More details about how to process or transform the data can be found in this file digitrec_data.py. And image & label are the basic knowledge in machine learning.
+**Note**: 
+
+1. Including the Vivado HLS C++ code first.
+2. More details about how to process or transform the data can be found in this file digitrec_data.py. And image & label are the basic knowledge in machine learning.
+3. The int datatype in the function of DigitRec() should be the integer power of 2. e.g., 64, 8, 49 is not allowed. 
 
 ###Generate Host file
 
+The host file of OpenCL maybe a bit complex. Don't worry! I will teach you how to write it and HeteroCL can help us generate it automatically.
 
+In this example, some API in host file are based on Rosetta. If you don't know it, you can figure it out through this [repo](https://github.com/cornell-zhang/rosetta).
+
+According to the different hardware vendors, I complete the following three runtime systems:
+
+- Intel: based on OpenCL C API (AOCL)
+- Xilinx: based on OpenCL C++ API (SDAccel)
+- AWS: Rosetta
+
+But the key concept for each host file are same, you will find that they follow the same pipline and structure. I will give some samples of various types of host file ( OpenCL C, OpenCL C++ and Rosetta).
+
+Example:
+
+1. [sample1]() based on OpenCL C API (AOCL).
+2. [sample2]() based on OpenCL C++ API (SDAccel)
+3. [sample3]() based on  Rosetta.
+
+I basically categorize the whole host file into these parts:
+
+- Getting First Platform.
+- Getting ACCELERATOR Devices and selecting it.
+- Creating Context and Command Queue for selected Device.
+- Creating Kernel and Functor of Kernel.
+- Creating Buffers inside Device
+- Copying input data to Device buffer from host memory
+- Running Kernel
+- Copying Device result data to Host memory
+- Cleaning up the memory
+
+And I will go through all of them in code snippets.
+
+``` c++
+
+```
 
 
 
@@ -319,7 +358,7 @@ Some arguments information:
 
 ### Develop new components
 
-We basically categorize the whole pipeline into 3 steps:
+I basically categorize the whole pipeline into 3 steps:
 
 - Imperative Code: Python-based domain-specific language.
 - Heterogeneous Backend: the component provides a fully automated compilation flow from DSL to heterogeneous platforms. e.g., CPUs and FPGAs.
