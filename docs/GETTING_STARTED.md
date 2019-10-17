@@ -5,18 +5,15 @@ This page provides basic tutorial about the usage of HeteroCL DigitRec sample.
 For installation instructions, please see [INSTALL.md](INSTALL.md).
 
 - [x] Generate Kernel file automatically.
-
 - [x] Generate Host file automatically.
-
 - [x] Generate Wrapper file automatically.
-
 - [x] Runtime system.
 
-You can use the following HeteroCL code to start the whole pipeline.
+---
 
-Here is an example of building the KNN-Based Digit Recognition.
+### The whole pipeline
 
- You can name it as digitrec_main.py
+You can use the following HeteroCL code to start the whole pipeline.Here is an example of building the KNN-Based Digit Recognition. You can name it as digitrec_main.py
 
 ```python
 # Import necessary modules.
@@ -187,7 +184,28 @@ print("Accuracy (%): {:.2f}".format(100*correct/180))
 assert (correct >= 150.0)
 ```
 
-You can get the final results on CPU.
+Examples:
+
+```shell
+python digitrec/digitrec_main.py
+```
+
+You can get the final results on CPU simulation and the output is expected to be like the following.
+
+```
+Average kernel time (s): 0.00
+Accuracy (%): 94.44
+```
+
+**Note:** You should put *digitrec_data.py* and *data* folder in this example and then you can get this structure.
+
+```
+├── digitrec
+│   ├── digitrec_main.py
+│   ├── digitrec_data.py
+│   ├── digitrec_aws.py
+│   ├── data
+```
 
 You can name another file named digitrec_aws.py and put it in the same directary (digitrec_main.py)
 
@@ -204,7 +222,6 @@ correct = 0.0
 
 total_time = 0
 for i in range(0, 180):
-
     hcl_train_images = hcl.asarray(train_images, dtype_image)
     hcl_knn_mat = hcl.asarray(np.zeros((10, 3)), dtype_knnmat)
 
@@ -216,12 +233,36 @@ for i in range(0, 180):
     if knn_vote(knn_mat) == test_labels[i]:
         correct += 1
 
-
 print("Average kernel time (s): {:.2f}".format(total_time/180))
 print("Accuracy (%): {:.2f}".format(100*correct/180))
 ```
 
 A jupyter notebook demo can be found in [demo]().
+
+### Generate Kernel file
+
+You can use different backend in HeteroCL to generate the kernel code you want. The operation is so easy, you only change the argument of function *top()*
+
+```python
+offload = top() # e.g., 'vhls', 'aws', 'aocl'
+```
+
+**Note:** HeteroCL can support these backend now:
+
+`FPGA_TARGETS = ['merlinc', 'soda', 'soda_xhls', 'vhls', 'ihls', 'vhls_csim',                		  'sdaccel', 'sdaccel_csim', 'aocl', 'aocl_csim', 'aws', 'aws_csim']`
+
+And then you should add this snippet after the `offload = top('aws')`:
+
+```python
+with open('knn_aws.cpp', 'w') as fin:
+  fin.write(code)
+```
+
+### Generate Host file
+
+### Generate Wrapper file 
+
+---
 
 ### Develop new components
 
