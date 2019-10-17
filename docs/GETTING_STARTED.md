@@ -311,10 +311,14 @@ Arguments information:
 **Note**: 
 
 1. Including the Vivado HLS C++ code first.
+
 2. More details about how to process or transform the data can be found in this file digitrec_data.py. And image & label are the basic knowledge in machine learning.
+
 3. The int datatype in the function of DigitRec() should be the integer power of 2. e.g., 64, 8, 49 is not allowed. 
 
-###Generate Host file
+   
+
+### Generate Host file
 
 The host file of OpenCL maybe a bit complex. Don't worry! I will teach you how to write it and HeteroCL can help us generate it automatically.
 
@@ -328,11 +332,11 @@ According to the different hardware vendors, I complete the following three runt
 
 But the key concept for each host file are same, you will find that they follow the same pipline and structure. I will give some samples of various types of host file ( OpenCL C, OpenCL C++ and Rosetta).
 
-Example:
+Examples:
 
-1. [sample1]() based on OpenCL C API (AOCL).
-2. [sample2]() based on OpenCL C++ API (SDAccel)
-3. [sample3]() based on  Rosetta.
+1. [sample1](demo/host_cplusplus.cpp) based on OpenCL C API (AOCL).
+2. [sample2](demo/host_c.cpp) based on OpenCL C++ API (SDAccel).
+3. [sample3](demo/host_rosetta.cpp) based on  Rosetta.
 
 I basically categorize the whole host file into these parts:
 
