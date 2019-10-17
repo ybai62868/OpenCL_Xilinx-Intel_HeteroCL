@@ -258,9 +258,62 @@ with open('knn_aws.cpp', 'w') as fin:
   fin.write(code)
 ```
 
-### Generate Host file
+###Generate Wrapper file 
 
-### Generate Wrapper file 
+In order to support some features that Xilinx OpenCL doesn't have, we add the wrapper file in the whole pipeline to make sure the Vivado HLS C++ can be embeded into host file sucessfully.
+
+Here is an example of wrapper file:
+
+```C++
+#include <stdio.h>
+#include "/home/centos/src/project_data/lab_digitrec_aws/solution/src/kernel/knn_aws.cpp"
+
+extern "C"
+{
+  void DigitRec( ap_uint<64>* source_wrapper_0, ap_uint<64>* source_wrapper_1, ap_uint<6>* source_wrapper_2 ) {
+  #pragma HLS INTERFACE m_axi port= source_wrapper_0 offset=slave bundle=gmem
+  #pragma HLS INTERFACE m_axi port= source_wrapper_1 offset=slave bundle=gmem
+  #pragma HLS INTERFACE m_axi port= source_wrapper_2 offset=slave bundle=gmem
+  #pragma HLS INTERFACE s_axilite port= source_wrapper_0 bundle=control
+  #pragma HLS INTERFACE s_axilite port= source_wrapper_1 bundle=control
+  #pragma HLS INTERFACE s_axilite port= source_wrapper_2 bundle=control
+  #pragma HLS INTERFACE s_axilite port=return bundle=control
+    
+  ap_uint<64> source_wrapper_temp_1[10][1800];
+  ap_uint<6> source_wrapper_temp_2[10][3];
+  for ( int i0 = 0; i0 < 10; i0++) {
+    for ( int i1 = 0; i1 < 1800; i1++) {
+      source_wrapper_temp_1[i0][i1] = source_wrapper_1[i1+ i0*1800];
+    }
+  }
+  for ( int i0 = 0; i0 < 10; i0++) {
+    for ( int i1 = 0; i1 < 3; i1++) {
+      source_wrapper_temp_2[i0][i1] = source_wrapper_1[i1+ i0*3];
+    }
+  }
+  default_function(source_wrapper_0[0], source_wrapper_temp_1, source_wrapper_temp_2);
+  for ( int i0 = 0; i0 < 10; i0++) {
+    for ( int i1 = 0; i1 < 3; i1++) {
+      source_wrapper_2[i1 + i0*3 ] = source_wrapper_temp_2[i0][i1];
+    }
+  }
+}
+}
+```
+
+Some arguments information:
+
+- `source_wrapper_0`: this argument represents the input argument (test_image label)
+- `source_wrapper_1`: this argument represents another input argument (training_image data)
+- `source_wrapper_2`: this argument represts the results (knn_mat)
+
+**Note**: More details about how to process or transform the data can be found in this file digitrec_data.py. And image & label are the basic knowledge in machine learning.
+
+###Generate Host file
+
+
+
+
 
 ---
 
