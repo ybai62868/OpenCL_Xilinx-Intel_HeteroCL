@@ -334,9 +334,9 @@ But the key concept for each host file are same, you will find that they follow 
 
 Examples:
 
-1. [sample1](demo/host_cplusplus.cpp) based on OpenCL C API (AOCL).
-2. [sample2](demo/host_c.cpp) based on OpenCL C++ API (SDAccel).
-3. [sample3](demo/host_rosetta.cpp) based on  Rosetta.
+1. [sample1](./demo/host_cplusplus.cpp) based on OpenCL C API (AOCL).
+2. [sample2](./demo/host_c.cpp) based on OpenCL C++ API (SDAccel).
+3. [sample3](./demo/host_rosetta.cpp) based on  Rosetta.
 
 I basically categorize the whole host file into these parts:
 
