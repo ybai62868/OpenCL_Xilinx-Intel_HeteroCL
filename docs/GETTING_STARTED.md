@@ -350,13 +350,7 @@ I basically categorize the whole host file into these parts:
 - Copying Device result data to Host memory
 - Cleaning up the memory
 
-And I will go through all of them in code snippets.
-
-``` c++
-
-```
-
-
+Actually, if you can finish all of these parts in host file, and then combine with the kernel code. You can run any task successfully on heterogeneous platforms (CPUs + GPUs/FPGAs).
 
 ---
 
@@ -369,3 +363,19 @@ I basically categorize the whole pipeline into 3 steps:
 - Runtime System: the component for specific tasks. e.g., CORDIC, KNN-Based Digit Recognition, GEMM, K-Means, LeNet Inference, Smith-Waterman Sequencing.
 
 For more information on how it works, you can refer to [TECHNICAL_DETAILS.md](./docs/TECHNICAL_DETAILS.md).
+
+---
+
+### How does it work?
+
+I don't want any mannual part occurs to the whole pipeline. You know, it will violate the principle that designing automation for high-performance and energy-efficient computer systems. **: )**
+
+As mentioned above, the whole pipeline can be split into three important parts.
+
+1. Imperative Code (Python).
+2. Kernel Code Generation (Computing Platforms).
+3. Host Code Generation (Runtime System).
+
+The simlpest way is to use [shared memory](https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_shared_memory.htm) to **glue** data memory from a HeteroCL program to heterogeneous computing platforms.
+
+For more details about how to use shared memory in this pipeline, you can refer to [TECHNICAL_DETAILS.md](./docs/TECHNICAL_DETAILS.md).

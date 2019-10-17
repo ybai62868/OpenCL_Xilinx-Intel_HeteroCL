@@ -18,7 +18,7 @@ If you do not know HeteroCL, you can figure it out through this [link](https://g
 ### Major features 
 
 - [x] Loop Unrolling
-- [x] Loop Piplining 
+- [x] Loop Pipelining 
 - [x] Pratition for Xilinx
 - [x] Arbitrary Precision Integers for Intel
 - [x] Runtime System:
