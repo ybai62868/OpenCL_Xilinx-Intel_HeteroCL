@@ -334,9 +334,9 @@ But the key concept for each host file are same, you will find that they follow 
 
 Examples:
 
-1. [sample1](./demo/host_cplusplus.cpp) based on OpenCL C API (AOCL).
-2. [sample2](./demo/host_c.cpp) based on OpenCL C++ API (SDAccel).
-3. [sample3](./demo/host_rosetta.cpp) based on  Rosetta.
+1. [sample1](../demo/host_cplusplus.cpp) based on OpenCL C API (AOCL).
+2. [sample2](../demo/host_c.cpp) based on OpenCL C++ API (SDAccel).
+3. [sample3](../demo/host_rosetta.cpp) based on  Rosetta.
 
 I basically categorize the whole host file into these parts:
 
@@ -368,4 +368,4 @@ I basically categorize the whole pipeline into 3 steps:
 - Heterogeneous Backend: the component provides a fully automated compilation flow from DSL to heterogeneous platforms. e.g., CPUs and FPGAs.
 - Runtime System: the component for specific tasks. e.g., CORDIC, KNN-Based Digit Recognition, GEMM, K-Means, LeNet Inference, Smith-Waterman Sequencing.
 
-For more information on how it works, you can refer to [TECHNICAL_DETAILS.md](docs/TECHNICAL_DETAILS.md).
+For more information on how it works, you can refer to [TECHNICAL_DETAILS.md](./docs/TECHNICAL_DETAILS.md).
