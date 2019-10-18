@@ -18,7 +18,7 @@ We have tested the following version of OS and software:
 a. Install HeteroCL from my repo using the aws branch.
 
 ```shell
-git clone -b aws https://github.com/ybai62868/heterocl
+git clone -b aws https://github.com/ybai62868/heterocl.git
 ```
 
 b. Clone the aws-fpga tool repository.
@@ -33,7 +33,7 @@ c. Install SDAccel development environment
 source envir.sh
 ```
 
-**Note:** You should put the envir.sh outside the aws-fpga folder.
+**Note:** You should put the envir.sh outside the aws-fpga folder and envir.sh can be found in `docs folder`.
 
 d. Clone the DigitRec Lab repository.
 
