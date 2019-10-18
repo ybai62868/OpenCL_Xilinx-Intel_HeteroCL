@@ -1,5 +1,5 @@
 # OpenCL_Xilinx-Intel_HeteroCL
-This is a repo which contains some details for HeteroCL developer and  how to use OpenCL backend (Xilinx/Intel) to test the samples in HeteroCL.
+This is a repo which contains some details for HeteroCL developers and  how to use OpenCL backend (Xilinx/Intel) to test the samples in HeteroCL.
 
 ## HeteroCL(FPGA'19 Best Paper Award!)
 

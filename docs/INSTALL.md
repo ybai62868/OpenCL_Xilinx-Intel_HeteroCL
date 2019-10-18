@@ -65,6 +65,8 @@ lab_digitrec_aws
 │   │   |   ├── training_set_9.dat
 │   ├── src
 │   │   ├── host
+│   │   │   ├── utils.cpp
+│   │   │   ├── utils.h
 │   │   ├── kernel
 │   ├── Makefile
 │   ├── run_hw.sh
