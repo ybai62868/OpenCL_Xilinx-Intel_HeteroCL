@@ -41,7 +41,7 @@ d. Clone the DigitRec Lab repository.
 git clone https://github.com/ybai62868/lab_digitrec_aws.git
 ```
 
-**Note:** If your folder structure is different, you may need to change the correpsonding paths in some files. But I recommend you use this structure.
+**Note:** The default location for this repo is `/home/centos/src/project_data/lab_digitrec_aws` in AWS. If your folder structure is different, you may need to change the correpsonding paths in some files. But I recommend you use this structure.
 
 ```
 lab_digitrec_aws
