@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../prj.ip_user_files/bd/emu/ip/emu_psr_dma_pcie_0/sim/emu_psr_dma_pcie_0.vhd" \
-"../../../../prj.ip_user_files/bd/emu/ip/emu_psr_kernel_clk_0/sim/emu_psr_kernel_clk_0.vhd" \
-"../../../../prj.ip_user_files/bd/emu/ip/emu_psr_axi_lite_control_clk_0/sim/emu_psr_axi_lite_control_clk_0.vhd" \
-"../../../../prj.ip_user_files/bd/emu/ip/emu_psr_kernel2_clk_0/sim/emu_psr_kernel2_clk_0.vhd" \
-
-# Do not sort compile order
-nosort

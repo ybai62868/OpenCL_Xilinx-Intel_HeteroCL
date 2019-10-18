@@ -10,6 +10,7 @@ void default_function(ap_uint<64> test_image, ap_uint<64> train_images[10][1800]
   }
   ap_uint<49> knn_update;
   for (ap_int<32> y1 = 0; y1 < 1800; ++y1) {
+  #pragma HLS unroll
     for (ap_int<32> x1 = 0; x1 < 10; ++x1) {
     #pragma HLS pipeline
       ap_uint<6> dist;

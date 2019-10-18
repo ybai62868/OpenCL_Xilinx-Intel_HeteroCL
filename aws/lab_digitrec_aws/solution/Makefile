@@ -2,10 +2,12 @@
 KERNEL_NAME = DigitRec
 
 # Set host source and headers
-HOST_SRC_CPP = ./src/host/digit_recognition.cpp ./src/host/utils.cpp ./src/host/check_result.cpp
-HOST_SRC_H   = ./src/host/utils.h ./src/host/check_result.h ./src/host/typedefs.h ./src/host/testing_data.h \
+# HOST_SRC_CPP = ./src/host/digit_recognition.cpp ./src/host/utils.cpp ./src/host/check_result.cpp
+HOST_SRC_CPP = ./src/host/digit_recognition.cpp ./src/host/utils.cpp 
+# HOST_SRC_H   = ./src/host/utils.h ./src/host/check_result.h ./src/host/typedefs.h ./src/host/testing_data.h \
                ./src/host/training_data.h
-DATA         = ./data/*.dat
+HOST_SRC_H = ./src/host/utils.h
+# DATA         = ./data/*.dat
 
 
 # Set host code include paths
@@ -14,7 +16,7 @@ HOST_LIB = -L/opt/Xilinx/Vivado/2018.2.op2258646/lib/
 
 # Set kernel file
 OCL_KERNEL_SRC = ./src/kernel/digitrec.cpp
-OCL_KERNEL_H = ./src/host/typedefs.h
+# OCL_KERNEL_H = ./src/host/typedefs.h
 # SDSOC_KERNEL_SRC = ./src/sdsoc/digitrec.cpp
 # SDSOC_KERNEL_H = ./src/host/typedefs.h
 # SW_KERNEL_SRC = ./src/sw/digitrec_sw.cpp

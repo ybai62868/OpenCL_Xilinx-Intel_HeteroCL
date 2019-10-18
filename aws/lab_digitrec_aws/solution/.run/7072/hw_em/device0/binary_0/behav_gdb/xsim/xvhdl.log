@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.ip_user_files/bd/emu/ip/emu_psr_dma_pcie_0/sim/emu_psr_dma_pcie_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity emu_psr_dma_pcie_0
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.ip_user_files/bd/emu/ip/emu_psr_kernel_clk_0/sim/emu_psr_kernel_clk_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity emu_psr_kernel_clk_0
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.ip_user_files/bd/emu/ip/emu_psr_axi_lite_control_clk_0/sim/emu_psr_axi_lite_control_clk_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity emu_psr_axi_lite_control_clk_0
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/centos/src/project_data/lab_digitrec_aws/solution/_x/link/vivado/prj/prj.ip_user_files/bd/emu/ip/emu_psr_kernel2_clk_0/sim/emu_psr_kernel2_clk_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity emu_psr_kernel2_clk_0

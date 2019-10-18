@@ -380,7 +380,7 @@ As mentioned above, the whole pipeline can be split into three important parts.
 
 1. Imperative Code (Python).
 2. Kernel Code Generation (Computing Platforms).
-3. Host Code Generation (Runtime System).
+3. Host (+ Wrapper) Code Generation (Runtime System).
 
 The simlpest way is to use [shared memory](https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_shared_memory.htm) to **glue** data memory from a HeteroCL program to heterogeneous computing platforms.
 

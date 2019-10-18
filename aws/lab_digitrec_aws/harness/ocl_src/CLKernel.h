@@ -63,7 +63,10 @@ namespace rosetta
       int set_const_arg(int id, T& mem_obj)
       {
         int err;
+	// printf("%d\n", mem_obj);
         err = clSetKernelArg(this->kernel, id, sizeof(mem_obj), &mem_obj);
+	printf("****************\n");
+	printf("%d\n", err);
         if (err != CL_SUCCESS)
         {
           printf("Error: Failed to set kernel argument %d for kernel %s!\n", id, (this->kernel_name).c_str());

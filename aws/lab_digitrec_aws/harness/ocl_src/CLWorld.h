@@ -65,6 +65,7 @@ namespace rosetta
       template<typename T>
       int setConstKernelArg(int kernel_id, int pos, T& arg)
       {
+	// printf("%lu\n", arg);
         printf("Set const arg %d for kernel %d ... ", pos, kernel_id);
     
         int err = kernels[kernel_id].set_const_arg(pos, arg);
