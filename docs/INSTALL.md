@@ -38,7 +38,7 @@ source envir.sh
 d. Clone the DigitRec Lab repository.
 
 ```shell
-git clone https://github.com/ybai62868/OpenCL_Xilinx-Intel_HeteroCL/tree/master/aws/lab_digitrec_aws
+git clone https://github.com/ybai62868/lab_digitrec_aws.git
 ```
 
 **Note:** If your folder structure is different, you may need to change the correpsonding paths in some files. But I recommend you use this structure.
