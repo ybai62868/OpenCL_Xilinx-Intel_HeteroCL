@@ -44,6 +44,12 @@ Please see  [TECHNICAL_DETAILS.md](docs/TECHNICAL_DETAILS.md) for learning how t
 
 ---
 
+## Support 
+
+If you like this repo and find it useful, please consider (★) starring it, so that it can reach broader developers.
+
+---
+
 ## Acknowledgement
 
 This work had been done when I was an Intern at Cornell University (Computer Systems Lab).
